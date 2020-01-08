@@ -15,6 +15,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: 'Circular';
 }
 
 @import url(https://fonts.googleapis.com/css?family=Space+Mono:400, 700);
@@ -22,7 +23,7 @@
 body {
   background: white;
   font-weight: 400;
-  height: 300vh;
+  height: 400vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -34,7 +35,7 @@ section {
 
 .text {
   margin-left: 30px;
-  font-family: "circular";
+  font-family: "Circular";
   color: black;
   margin-top: 10px;
 }
@@ -89,21 +90,21 @@ p {
   margin-top: 40px;
 }
 
-.wavies > use {
+.wavies>use {
   animation: waveAround 3s linear infinite;
 }
 
-.wavies > use:nth-child(1) {
+.wavies>use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 2s;
 }
 
-.wavies > use:nth-child(2) {
+.wavies>use:nth-child(2) {
   animation-delay: -2s;
   animation-duration: 2s;
 }
 
-.wavies > use:nth-child(3) {
+.wavies>use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 2s;
 }
@@ -127,6 +128,7 @@ svg {
   width: 250px;
   height: 250px;
   border-radius: 50%;
+  background-color: rgba(16, 219, 147, 0.07);
   z-index: -99;
 }
 
@@ -206,6 +208,7 @@ a {
 .menu__list {
   list-style: none;
 }
+
 .btn {
   padding-left: 120px;
 }
@@ -269,6 +272,7 @@ a {
   margin-top: 100vh;
   width: 100vw;
 }
+
 .navbar {
   position: fixed;
   top: 0%;
@@ -276,16 +280,20 @@ a {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.6);
 }
+
 section {
   height: 90vh;
   margin-top: 3vh;
 }
+
 .wave21 {
   fill: #a0c0ff;
 }
+
 .sec {
   padding-top: 70px;
 }
+
 #title2 {
   font-size: 50px;
   font-weight: 800;
@@ -296,6 +304,50 @@ section {
   z-index: 100;
   margin-top: 40px;
 }
+
+.button1:hover {
+  cursor: pointer;
+}
+
 .bg1 {
   background-color: #a0c0ff;
+}
+
+.head {
+  animation: an 0.6s;
+  animation-delay: 2.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes an {
+  0% {
+    background-color: transparent;
+  }
+
+  100% {
+    background-color: rgba(235, 64, 52, 0.5);
+  }
+}
+
+.wave31 {
+  fill: #eb4034;
+}
+
+.bg2 {
+  background-color: #eb4034;
+}
+
+.image {
+  width: 90vw;
+}
+
+#title3 {
+  font-size: 50px;
+  font-weight: 800;
+  width: 200px;
+  font-family: "Circular";
+  letter-spacing: 1px;
+  margin-left: 30px;
+  z-index: 100;
+  margin-top: 40px;
 }
