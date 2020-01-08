@@ -31,15 +31,17 @@ $(document).ready(function () {
     }).on('start', function () {
         typeWriter();
     }).addTo(controller);
+    var scene1 = new ScrollMagic.Scene({
+        triggerElement: '#t1'
+    }).setClassToggle('#box', 'boxani').addTo(controller);
 });
 
 function openMenu() {
     document.getElementById('menuButton').classList.add('menu__btn1');
 }
-var i = 0;
 
 function onclik() {
-    if (i == 0) {
+    if (document.getElementById('menu').style.visibility == 'hidden') {
         document.getElementById('menu1').style.top = '-120vw';
         setTimeout(function () {
             document.getElementById('menu2').style.top = '-120vw';
@@ -47,8 +49,6 @@ function onclik() {
         setTimeout(function () {
             document.getElementById('menu').style.visibility = 'visible';
         }, 200);
-
-        i = 1;
 
     } else {
         document.getElementById('menu1').style.top = '-250vw';
@@ -58,6 +58,5 @@ function onclik() {
         setTimeout(function () {
             document.getElementById('menu').style.visibility = 'hidden';
         }, 200);
-        i = 0;
     }
 }

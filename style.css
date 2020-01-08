@@ -29,7 +29,7 @@ body {
 .text {
     margin-left: 30px;
     font-family: 'circular';
-    color: #545666;
+    color: black;
     margin-top: 10px;
 }
 
@@ -61,7 +61,7 @@ h1 {
 }
 
 p {
-    color: #545666;
+    color: black;
 }
 
 /* --- menu --- */
@@ -126,7 +126,7 @@ svg {
     width: 250px;
     height: 250px;
     border-radius: 50%;
-    z-index: -5;
+    z-index: -99;
 }
 
 
@@ -190,16 +190,14 @@ svg {
 
 }
 
-.bg_layer1 {
-    background-color: aquamarine;
-}
+
 
 .bg_layer2 {
-    background-color: #faff7f;
+    background-color: #16db93;
 }
 
 .bg_layer3 {
-    background-color: blue;
+    background-color: rgba(16, 219, 147, 0.5);
 }
 
 a {
@@ -238,10 +236,21 @@ a {
 .box {
     margin-left: 30px;
     margin-right: 20px;
-    font-size: 25px;
+    margin-top: 40px;
+    font-size: 27px;
     line-height: 1.2em;
     color: black !important;
-    font-family: 'Ciruclar';
+    font-family: 'circular';
+    transform: translateY(70px);
+    opacity: 0;
+    transition: all 0.5s linear;
+    transition-delay: 1.6s;
+    z-index: -20;
+}
+
+.boxani {
+    transform: translateY(0px);
+    opacity: 1;
 }
 
 .button1 {
@@ -249,8 +258,8 @@ a {
     border: none;
     width: 180px;
     height: 45px;
-    background-color: rgba(16, 219, 93, 0.6);
+    background-color: rgba(16, 219, 147, 0.8);
     color: white;
     border-radius: 4px;
-    margin-top: 40px;
+    margin-top: 50px;
 }
