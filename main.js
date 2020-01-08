@@ -36,7 +36,7 @@ function typeWriter2() {
     if (j < txt2.length) {
         console.log(j);
         var sym = symbols[Math.floor(Math.random() * 5)];
-        if (txt2.charAt(j) == 'g' || txt2.charAt(j) == 'n' && j > 10) {
+        if (txt2.charAt(j) == 'g' || (txt2.charAt(j) == 'n' && j > 13)) {
             document.getElementById('title2').innerHTML += '<span style="color: #a0c0ff;">' + txt2.charAt(j) + "</span>" + sym;
         } else {
             document.getElementById('title2').innerHTML += txt2.charAt(j) + sym;
