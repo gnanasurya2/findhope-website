@@ -82,7 +82,6 @@ p {
   font-size: 50px;
   font-weight: 800;
   width: 200px;
-  height: 230px;
   font-family: "Circular";
   letter-spacing: 1px;
   margin-left: 30px;
@@ -237,7 +236,7 @@ a {
   margin-left: 30px;
   position: relative;
   margin-right: 20px;
-  margin-top: 40px;
+  margin-top: 5vh;
   font-size: 27px;
   line-height: 1.2em;
   color: black !important;
@@ -245,7 +244,7 @@ a {
   transform: translateY(70px);
   opacity: 0;
   transition: all 0.5s linear;
-  transition-delay: 1.6s;
+  transition-delay: 2s;
   z-index: -50;
 }
 
@@ -279,7 +278,7 @@ a {
 }
 section {
   height: 90vh;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 .wave21 {
   fill: #a0c0ff;
