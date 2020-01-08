@@ -34,6 +34,15 @@ $(document).ready(function () {
     var scene1 = new ScrollMagic.Scene({
         triggerElement: '#t1'
     }).setClassToggle('#box', 'boxani').addTo(controller);
+    var scene2 = new ScrollMagic.Scene({
+        triggerElement: '#sec1'
+    }).setClassToggle('#wave1', 'wave21').addTo(controller);
+    var scene3 = new ScrollMagic.Scene({
+        triggerElement: '#sec1'
+    }).setClassToggle('#wave2', 'wave21').addTo(controller);
+    var scene4 = new ScrollMagic.Scene({
+        triggerElement: '#sec1'
+    }).setClassToggle('#wave3', 'wave21').addTo(controller);
 });
 
 function openMenu() {

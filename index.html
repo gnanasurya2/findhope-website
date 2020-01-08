@@ -1,73 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>FindHope</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <div class="navbar" id="t1">
-        <div class="heading">
-            <div>
-                <h1 class="text">FindHope</h1>
-            </div>
-            <div class="menu__label menu__btn" onclick="onclik()"><i class="fa fa-bars fa-2x btn"
-                    aria-hidden="true"></i>
-                <div class="menu__container" id="menu">
-                    <span class="menu__title">FindHope</span>
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <a href="">Home</a></li>
-                        <li class="menu__item">
-                            <a href="">Youth Advocates</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="">Stories</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="">Contact Us</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+      <div class="heading">
+        <div>
+          <h1 class="text">FindHope.</h1>
         </div>
-        <div class="bg" id="bg">
-            <div class="bg_layer3 menu_bg_layer" id="menu1"></div>
-            <div class="bg_layer2 menu_bg_layer" id="menu2"></div>
+        <div class="menu__label menu__btn" onclick="onclik()">
+          <i class="fa fa-bars fa-2x btn" aria-hidden="true"></i>
+          <div class="menu__container" id="menu" style="visibility: hidden;">
+            <span class="menu__title">FindHope</span>
+            <ul class="menu__list">
+              <li class="menu__item">
+                <a href="">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="">Youth Advocates</a>
+              </li>
+              <li class="menu__item">
+                <a href="">Stories</a>
+              </li>
+              <li class="menu__item">
+                <a href="">Contact Us</a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="bg" id="bg">
+        <div class="bg_layer3 menu_bg_layer" id="menu1"></div>
+        <div class="bg_layer2 menu_bg_layer" id="menu2"></div>
+      </div>
     </div>
-    <div class="svg">
-        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
-            preserveAspectRatio="none">
-            <defs>
-                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-            </defs>
-            <g class="wavies">
-                <use xlink:href="#gentle-wave" x="10" y="11" fill="#EBF1FF" class="wave1" />
-                <use xlink:href="#gentle-wave" x="70" y="13" fill="#E0EAFF" class="wave2" />
-                <use xlink:href="#gentle-wave" x="120" y="15" fill="#D7E4FF" class="wave3" />
-            </g>
+    <section class="sec">
+      <div class="svg">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 24 150 28"
+          preserveAspectRatio="none"
+        >
+          <defs>
+            <path
+              id="gentle-wave"
+              d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+            />
+          </defs>
+          <g class="wavies">
+            <use
+              xlink:href="#gentle-wave"
+              x="10"
+              y="11"
+              fill="#EBF1FF"
+              class="wave1 wave"
+              id="wave1"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="70"
+              y="13"
+              fill="#E0EAFF"
+              class="wave2 wave"
+              id="wave2"
+            />
+            <use
+              xlink:href="#gentle-wave"
+              x="120"
+              y="15"
+              fill="#D7E4FF"
+              class="wave3 wave"
+              id="wave3"
+            />
+          </g>
         </svg>
-    </div>
-    <p id="title"></p>
-    <div class="box" id="box">
-        <p class="text2">We create digital products that change the way people look at, deal with and take control of
-            their mental wellbeing.</p>
+      </div>
+      <p id="title"></p>
+      <div class="box" id="box">
+        <p class="text2">
+          We create digital products that change the way people look at, deal
+          with and take control of their mental wellbeing.
+        </p>
         <button class="button1">Lorem ipsum</button>
-    </div>
-</body>
-<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
-<script src="./main.js"></script>
-
+      </div>
+    </section>
+    <section id="sec1"></section>
+  </body>
+  <link
+    href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  <script src="./main.js"></script>
 </html>

@@ -1,266 +1,289 @@
 @font-face {
-    font-family: "Circular";
-    src: url("./Circular\ Std\ Book.otf");
-    src: local("Circular"), local("Circular"),
-        url("./Circular\ Std\ Book.otf") format("opentype");
+  font-family: "Circular";
+  src: url("./Circular\ Std\ Book.otf");
+  src: local("Circular"), local("Circular"),
+    url("./Circular\ Std\ Book.otf") format("opentype");
 }
 
 @font-face {
-    font-family: "spartan";
-    src: url("./LeagueGothic-Regular.otf");
-    src: local("spartan"), local("spartan"),
-        url("./LeagueGothic-Regular.otf") format("opentype");
+  font-family: "spartan";
+  src: url("./LeagueGothic-Regular.otf");
+  src: local("spartan"), local("spartan"),
+    url("./LeagueGothic-Regular.otf") format("opentype");
 }
 
 * {
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 
 @import url(https://fonts.googleapis.com/css?family=Space+Mono:400, 700);
 
 body {
-    background: white;
-    font-weight: 400;
-    height: 300vh;
-    width: 100vw;
+  background: white;
+  font-weight: 400;
+  height: 300vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  height: 90vh;
 }
 
 .text {
-    margin-left: 30px;
-    font-family: 'circular';
-    color: black;
-    margin-top: 10px;
+  margin-left: 30px;
+  font-family: "circular";
+  color: black;
+  margin-top: 10px;
 }
-
 
 input,
 button {
-    font-family: "Space Mono";
-    font-size: 1em;
+  font-family: "Space Mono";
+  font-size: 1em;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 
 .container {
-    overflow: hidden;
-    position: relative;
-    height: 100vh;
-    z-index: 100;
+  overflow: hidden;
+  position: relative;
+  height: 100vh;
+  z-index: 100;
 }
 
 .content {
-    padding: 5%;
+  padding: 5%;
 }
 
 h1 {
-    color: #16db93;
+  color: #16db93;
 }
 
 p {
-    color: black;
+  color: black;
 }
 
 /* --- menu --- */
 
 .menu__btn {
-    float: left;
-    background: none;
-    border: none;
-    padding: 1em 0.5em;
+  float: left;
+  background: none;
+  border: none;
+  padding: 1em 0.5em;
 }
-
 
 #title {
-    font-size: 50px;
-    font-weight: 800;
-    width: 200px;
-    height: 230px;
-    font-family: "Circular";
-    letter-spacing: 1px;
-    margin-left: 30px;
-    z-index: 100;
-    margin-top: 40px;
+  font-size: 50px;
+  font-weight: 800;
+  width: 200px;
+  height: 230px;
+  font-family: "Circular";
+  letter-spacing: 1px;
+  margin-left: 30px;
+  z-index: 100;
+  margin-top: 40px;
 }
 
-.wavies>use {
-    animation: waveAround 3s linear infinite;
+.wavies > use {
+  animation: waveAround 3s linear infinite;
 }
 
-.wavies>use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 2s;
+.wavies > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 2s;
 }
 
-.wavies>use:nth-child(2) {
-    animation-delay: -2s;
-    animation-duration: 2s;
+.wavies > use:nth-child(2) {
+  animation-delay: -2s;
+  animation-duration: 2s;
 }
 
-.wavies>use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 2s;
+.wavies > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 2s;
 }
 
 @keyframes waveAround {
-    0% {
-        transform: translate(-90px, 0%);
-    }
+  0% {
+    transform: translate(-90px, 0%);
+  }
 
-    100% {
-        transform: translate(85px, 0%);
-    }
+  100% {
+    transform: translate(85px, 0%);
+  }
 }
-
-
 
 svg {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-attachment: fixed;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    z-index: -99;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-attachment: fixed;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  z-index: -99;
 }
 
-
 .wave1 {
-    fill: #16db93;
-    opacity: 0.4;
+  fill: #16db93;
+  opacity: 0.4;
+  transition: all 0.4s linear;
 }
 
 .wave2 {
-    fill: #16db93;
-    opacity: 0.3;
+  fill: #16db93;
+  opacity: 0.3;
+  transition: all 0.4s linear;
 }
 
 .wave3 {
-    fill: #16db93;
-    opacity: 0.2;
+  fill: #16db93;
+  opacity: 0.2;
+  transition: all 0.4s linear;
 }
 
 .heading {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 10px;
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=output.css.map */
 .bg {
-    position: absolute;
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    transition: all 1s cubic-bezier(0.5, 0, 0.2, 1);
+  position: absolute;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  transition: all 1s cubic-bezier(0.5, 0, 0.2, 1);
 }
 
 .menu__btn {
-    z-index: 100;
-    display: flex;
-    flex-direction: column;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
 }
 
-
 .menu__container {
-    z-index: 105;
-    list-style: none;
-    line-height: 2em;
-    text-align: right;
-    margin-right: 20px;
+  z-index: 105;
+  list-style: none;
+  line-height: 2em;
+  text-align: right;
+  margin-right: 20px;
 }
 
 .menu_bg_layer {
-    width: 200vw;
-    height: 250vw;
-    border-radius: 50%;
-    position: absolute;
-    top: -250vw;
-    right: -100vw;
-    overflow: hidden;
-    transition: all 0.7s cubic-bezier(0.5, 0, 0.2, 1);
-
+  width: 200vw;
+  height: 250vw;
+  border-radius: 50%;
+  position: absolute;
+  top: -250vw;
+  right: -100vw;
+  overflow: hidden;
+  transition: all 0.7s cubic-bezier(0.5, 0, 0.2, 1);
 }
 
-
-
 .bg_layer2 {
-    background-color: #16db93;
+  background-color: #16db93;
 }
 
 .bg_layer3 {
-    background-color: rgba(16, 219, 147, 0.5);
+  background-color: #16db93;
+  opacity: 0.5;
 }
 
 a {
-    text-decoration-style: none;
+  text-decoration-style: none;
 }
 
 .menu__list {
-    list-style: none;
+  list-style: none;
 }
-
 .btn {
-    padding-left: 120px;
+  padding-left: 120px;
 }
 
 .menu__container {
-    position: absolute;
-    margin-top: 60px;
-    visibility: hidden;
-    transition-delay: 0.3s;
+  position: absolute;
+  margin-top: 60px;
+  visibility: hidden;
+  transition-delay: 0.3s;
 }
 
 .menu__title {
-    font-size: 25px;
-    margin-top: 1000px;
+  font-size: 25px;
+  margin-top: 1000px;
+  color: black;
 }
 
 .menu__list {
-    line-height: 45px;
-    font-size: 25px;
+  line-height: 45px;
+  font-size: 25px;
 }
 
 .menu__item:hover {
-    color: white;
+  color: white;
 }
 
 .box {
-    margin-left: 30px;
-    position: relative;
-    margin-right: 20px;
-    margin-top: 40px;
-    font-size: 27px;
-    line-height: 1.2em;
-    color: black !important;
-    font-family: 'circular';
-    transform: translateY(70px);
-    opacity: 0;
-    transition: all 0.5s linear;
-    transition-delay: 1.6s;
-    z-index: -50;
+  margin-left: 30px;
+  position: relative;
+  margin-right: 20px;
+  margin-top: 40px;
+  font-size: 27px;
+  line-height: 1.2em;
+  color: black !important;
+  font-family: "circular";
+  transform: translateY(70px);
+  opacity: 0;
+  transition: all 0.5s linear;
+  transition-delay: 1.6s;
+  z-index: -50;
 }
 
 .boxani {
-    transform: translateY(0px);
-    opacity: 1;
+  transform: translateY(0px);
+  opacity: 1;
 }
 
 .button1 {
-    font-size: 20px;
-    border: none;
-    width: 180px;
-    height: 45px;
-    background-color: rgba(16, 219, 147, 0.8);
-    color: white;
-    border-radius: 4px;
-    margin-top: 50px;
+  font-size: 20px;
+  border: none;
+  width: 180px;
+  height: 45px;
+  background-color: rgba(16, 219, 147, 0.8);
+  color: white;
+  border-radius: 4px;
+  margin-top: 50px;
+}
+
+.page_break {
+  position: absolute;
+  margin-top: 100vh;
+  width: 100vw;
+}
+.navbar {
+  position: fixed;
+  top: 0%;
+  height: 10vh;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+section {
+  height: 90vh;
+  margin-top: 5vh;
+}
+.wave21 {
+  fill: #a0c0ff;
+}
+.sec {
+  padding-top: 70px;
 }
