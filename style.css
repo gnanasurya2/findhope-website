@@ -49,6 +49,7 @@ button {
 a {
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
 }
 
 .container {
@@ -413,4 +414,40 @@ section {
 #sec4 {
   background-color: white;
   margin-top: 0px;
+}
+
+.image_div {
+  margin-top: 5vh;
+  margin-left: 3vh;
+  width: 30vw;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  font-size: 18px;
+  margin-left: 20px;
+  text-align: center;
+
+}
+
+.soc {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 15px;
+}
+
+.soc_title {
+  text-align: left;
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: rgb(178, 204, 255);
+}
+
+.social_text {
+  margin-left: 20px;
+  position: relative;
+  z-index: 99;
 }
