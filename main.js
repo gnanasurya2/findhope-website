@@ -104,124 +104,125 @@ function typeWriter3() {
     setTimeout(typeWriter3, speed);
   }
 }
-$(document).ready(function () {
+$(document).ready(function() {
   var controller = new ScrollMagic.Controller();
   var scene = new ScrollMagic.Scene({
-      triggerElement: "#t1"
-    })
-    .on("start", function () {
+    triggerElement: "#t1"
+  })
+    .on("start", function() {
       typeWriter();
     })
     .addTo(controller);
   var scene1 = new ScrollMagic.Scene({
-      triggerElement: "#t1"
-    })
+    triggerElement: "#t1"
+  })
     .setClassToggle("#box", "boxani")
     .addTo(controller);
   var scene2 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1"
+  })
     .setClassToggle("#wave1", "wave21")
     .addTo(controller);
   var scene3 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1"
+  })
     .setClassToggle("#wave2", "wave21")
     .addTo(controller);
   var scene4 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1"
+  })
     .setClassToggle("#wave3", "wave21")
     .addTo(controller);
   var scene5 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
-    .on("start", function () {
+    triggerElement: "#sec1"
+  })
+    .on("start", function() {
       typeWriter2();
     })
     .addTo(controller);
   var scene6 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1"
+  })
     .setClassToggle("#menu1", "bg1")
     .addTo(controller);
   var scene7 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1"
+  })
     .setClassToggle("#menu2", "bg1")
     .addTo(controller);
   var scene8 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1"
+  })
     .setClassToggle("#box2", "boxani")
     .addTo(controller);
   var scene9 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1"
+  })
     .setClassToggle("#head1", "head")
     .addTo(controller);
   var scene10 = new ScrollMagic.Scene({
-      triggerElement: "#sec1"
-    })
+    triggerElement: "#sec1"
+  })
     .setClassToggle("#head2", "head")
     .addTo(controller);
   var scene11 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
+    triggerElement: "#sec2"
+  })
     .setClassToggle("#wave1", "wave31")
     .addTo(controller);
   var scene12 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
+    triggerElement: "#sec2"
+  })
     .setClassToggle("#wave2", "wave31")
     .addTo(controller);
   var scene13 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
+    triggerElement: "#sec2"
+  })
     .setClassToggle("#wave3", "wave31")
     .addTo(controller);
   var scene14 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
+    triggerElement: "#sec2"
+  })
     .setClassToggle("#menu1", "bg2")
     .addTo(controller);
   var scene15 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
+    triggerElement: "#sec2"
+  })
     .setClassToggle("#menu2", "bg2")
     .addTo(controller);
   var scene16 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
-    .on("start", function () {
+    triggerElement: "#sec2"
+  })
+    .on("start", function() {
       typeWriter3();
     })
     .addTo(controller);
   var scene17 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
-    })
-    .setClassToggle("#box3", "boxani")
-    .addTo(controller);
-  var scene20 = new ScrollMagic.Scene({
-      triggerElement: "#but1",
-      offset: 50
-    })
-    .setClassToggle("#img1", "img_ani")
-    .addTo(controller);
+    triggerElement: "#sec2"
+  }).setClassToggle("#box3", "boxani");
   var scene18 = new ScrollMagic.Scene({
-      triggerElement: "#but1",
-      offset: 50
-    })
+    triggerElement: "#but1",
+    offset: 50
+  })
     .setClassToggle("#img2", "img_ani")
     .addTo(controller);
   var scene19 = new ScrollMagic.Scene({
-      triggerElement: "#but1",
-      offset: 50
-    })
+    triggerElement: "#but1",
+    offset: 50
+  })
     .setClassToggle("#img3", "img_ani")
     .addTo(controller);
-
-
+  var scene20 = new ScrollMagic.Scene({
+    triggerElement: "#but1",
+    offset: 50
+  })
+    .setClassToggle("#img1", "img_ani")
+    .addTo(controller);
+  var scene21 = new ScrollMagic.Scene({
+    triggerElement: "#img1"
+  })
+    .setClassToggle("#back", "backani")
+    .addTo(controller);
 });
 
 function openMenu() {
@@ -231,18 +232,18 @@ function openMenu() {
 function onclik() {
   if (document.getElementById("menu").style.visibility == "hidden") {
     document.getElementById("menu1").style.top = "-120vw";
-    setTimeout(function () {
+    setTimeout(function() {
       document.getElementById("menu2").style.top = "-120vw";
     }, 200);
-    setTimeout(function () {
+    setTimeout(function() {
       document.getElementById("menu").style.visibility = "visible";
     }, 200);
   } else {
     document.getElementById("menu1").style.top = "-250vw";
-    setTimeout(function () {
+    setTimeout(function() {
       document.getElementById("menu2").style.top = "-250vw";
     }, 200);
-    setTimeout(function () {
+    setTimeout(function() {
       document.getElementById("menu").style.visibility = "hidden";
     }, 200);
   }

@@ -361,6 +361,7 @@ section {
 #sec3 {
   height: 60vh;
   background-color: #EDF2FF;
+  padding-bottom: 30px;
 }
 
 .title5 {
@@ -393,7 +394,7 @@ section {
 }
 
 .img_class {
-  margin-top: 50px;
+  transform: translateY(30px);
   opacity: 0;
   transition: all 0.3s linear;
 }
@@ -408,7 +409,7 @@ section {
 
 .img_ani {
   opacity: 1;
-  margin-top: 0px;
+  transform: translateY(0px);
 }
 
 #sec4 {
@@ -451,4 +452,30 @@ section {
   margin-left: 20px;
   position: relative;
   z-index: 99;
+}
+
+#sec5 {
+  height: 150%;
+  background-color: #64687D;
+  color: white;
+  font-weight: 100;
+}
+
+.text5 {
+  margin-top: 20px;
+  margin-left: 30px;
+  letter-spacing: 1.5px;
+}
+
+.contact {
+  margin-top: 50px;
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.back {
+  background-image: url('./back.png');
+  background-size: 50%;
+  padding: 4px;
+  transition: all 4s linear;
 }
