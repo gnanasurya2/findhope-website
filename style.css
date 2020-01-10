@@ -15,7 +15,7 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Circular';
+  font-family: "Circular";
 }
 
 @import url(https://fonts.googleapis.com/css?family=Space+Mono:400, 700);
@@ -23,14 +23,9 @@
 body {
   background: white;
   font-weight: 400;
-  height: 400vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-}
-
-section {
-  height: 90vh;
 }
 
 .text {
@@ -91,21 +86,22 @@ p {
   margin-top: 40px;
 }
 
-.wavies>use {
+.wavies > use {
   animation: waveAround 3s linear infinite;
+  z-index: -999;
 }
 
-.wavies>use:nth-child(1) {
+.wavies > use:nth-child(1) {
   animation-delay: -2s;
   animation-duration: 2s;
 }
 
-.wavies>use:nth-child(2) {
+.wavies > use:nth-child(2) {
   animation-delay: -2s;
   animation-duration: 2s;
 }
 
-.wavies>use:nth-child(3) {
+.wavies > use:nth-child(3) {
   animation-delay: -4s;
   animation-duration: 2s;
 }
@@ -130,7 +126,7 @@ svg {
   height: 250px;
   border-radius: 50%;
   background-color: rgba(16, 219, 147, 0.07);
-  z-index: -99;
+  z-index: -999999;
 }
 
 .wave1 {
@@ -156,20 +152,21 @@ svg {
   flex-direction: row;
   justify-content: space-between;
   margin: 10px;
+  z-index: 9999 !important;
 }
 
 /*# sourceMappingURL=output.css.map */
 .bg {
   position: absolute;
   overflow: hidden;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   top: 0;
   transition: all 1s cubic-bezier(0.5, 0, 0.2, 1);
 }
 
 .menu__btn {
-  z-index: 100;
+  z-index: 99999;
   display: flex;
   flex-direction: column;
 }
@@ -191,6 +188,7 @@ svg {
   right: -100vw;
   overflow: hidden;
   transition: all 0.7s cubic-bezier(0.5, 0, 0.2, 1);
+  z-index: 100;
 }
 
 .bg_layer2 {
@@ -219,6 +217,7 @@ a {
   margin-top: 60px;
   visibility: hidden;
   transition-delay: 0.3s;
+  right: 0;
 }
 
 .menu__title {
@@ -248,8 +247,7 @@ a {
   transform: translateY(70px);
   opacity: 0;
   transition: all 0.5s linear;
-  transition-delay: 2s;
-  z-index: -50;
+  transition-delay: 1.2s;
 }
 
 .boxani {
@@ -280,11 +278,7 @@ a {
   height: 10vh;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.6);
-}
-
-section {
-  height: 90vh;
-  margin-top: 3vh;
+  z-index: 999;
 }
 
 .wave21 {
@@ -293,6 +287,7 @@ section {
 
 .sec {
   padding-top: 70px;
+  height: 90vh;
 }
 
 #title2 {
@@ -332,6 +327,7 @@ section {
 
 #sec1 {
   height: 170vh;
+  z-index: 0;
 }
 
 .wave31 {
@@ -344,7 +340,7 @@ section {
 
 .image {
   width: 90vw;
-  z-index: 20;
+  z-index: 30;
 }
 
 #title3 {
@@ -359,8 +355,7 @@ section {
 }
 
 #sec3 {
-  height: 60vh;
-  background-color: #EDF2FF;
+  background-color: #edf2ff;
   padding-bottom: 30px;
 }
 
@@ -390,7 +385,6 @@ section {
 
 .logo {
   width: 90px;
-
 }
 
 .img_class {
@@ -431,7 +425,6 @@ section {
   font-size: 18px;
   margin-left: 20px;
   text-align: center;
-
 }
 
 .soc {
@@ -456,7 +449,7 @@ section {
 
 #sec5 {
   height: 150%;
-  background-color: #64687D;
+  background-color: #64687d;
   color: white;
   font-weight: 100;
 }
@@ -474,8 +467,21 @@ section {
 }
 
 .back {
-  background-image: url('./back.png');
+  background-image: url("./back.png");
   background-size: 50%;
   padding: 4px;
   transition: all 4s linear;
+}
+button:hover {
+  background-color: azure;
+}
+#sec9 {
+  height: 100vh;
+}
+#sec2 {
+  padding-bottom: 60px;
+}
+
+#sec5 {
+  padding-bottom: 60px;
 }
