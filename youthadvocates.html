@@ -9,13 +9,14 @@
     <title>youth advocates</title>
 </head>
 
-<body>
+<body onload="advocatesLoader()">
     <div class="navbar" id="t1">
         <div class="heading">
-
-            <div>
-                <h1 class="text">FindHope.</h1>
-            </div>
+            <a href="./index.html">
+                <div>
+                    <h1 class="text">FindHope.</h1>
+                </div>
+            </a>
             <div class="menu__label menu__btn" onclick="onclik()">
                 <i class="fa fa-bars fa-2x btn" aria-hidden="true"></i>
             </div>
@@ -24,7 +25,7 @@
             <span class="menu__title">FindHope</span>
             <ul class="menu__list">
                 <li class="menu__item">
-                    <a href="">Home</a>
+                    <a href="./index.html">Home</a>
                 </li>
                 <li class="menu__item">
                     <a href="">Youth Advocates</a>
@@ -40,19 +41,7 @@
         <div class="bg_layer3 menu_bg_layer" id="menu1"></div>
         <div class="bg_layer2 menu_bg_layer" id="menu2"></div>
     </div>
-    <div class="container_box">
-        <div class="container">
-            <img src="./8983.jpg" alt="image" class="advocate_image">
-            <p class="advocate_text">Gnana surya <br>NIT,Agartala</p>
-        </div>
-        <div class="container">
-            <img src="./8983.jpg" alt="image" class="advocate_image">
-            <p class="advocate_text">Gnana surya <br>NIT,Agartala</p>
-        </div>
-        <div class="container">
-            <img src="./8983.jpg" alt="image" class="advocate_image">
-            <p class="advocate_text">Gnana surya <br>NIT,Agartala</p>
-        </div>
+    <div class="container_box" id="container_box">
     </div>
 </body>
 <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet" />
@@ -61,6 +50,8 @@
 <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 <script src="./main.js"></script>
+<script src="./advocate.js"></script>
 
 </html>
