@@ -121,6 +121,7 @@ a {
     justify-content: space-evenly;
     align-items: center;
     width: 90vw;
+    height: 100px;
     background-color: #abd;
     margin-top: 1vh;
     border-radius: 10px;
@@ -135,6 +136,4 @@ a {
 
 .advocate_text {
     font-size: 19px;
-    height: 70px;
-    margin-top: 40px;
 }
