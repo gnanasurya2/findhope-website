@@ -48,7 +48,6 @@ function addSymbols2() {
 function typeWriter2() {
   var symbols = ["*", "-", "$", "%", "?", "@"];
   if (j < txt2.length) {
-    console.log(j);
     var sym = symbols[Math.floor(Math.random() * 5)];
     if (txt2.charAt(j) == "g" || txt2.charAt(j) == "+") {
       document.getElementById("title2").innerHTML +=
@@ -84,7 +83,6 @@ function addSymbols3() {
 function typeWriter3() {
   var symbols = ["*", "-", "$", "%", "?", "@"];
   if (k < txt3.length) {
-    console.log("k", k);
     var sym = symbols[Math.floor(Math.random() * 5)];
     if (txt3.charAt(k) == "u" || txt3.charAt(k) == "e") {
       document.getElementById("title3").innerHTML +=
@@ -249,8 +247,4 @@ function onclik() {
       document.getElementById("menu").style.visibility = "hidden";
     }, 200);
   }
-}
-
-function con() {
-  console.log("hello world");
 }
