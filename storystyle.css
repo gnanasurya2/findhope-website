@@ -64,11 +64,11 @@
 }
 
 .bg_layer2 {
-    background-color: #16db93;
+    background-color: #eb4034;
 }
 
 .bg_layer3 {
-    background-color: #16db93;
+    background-color: #eb4034;
     opacity: 0.5;
 }
 
@@ -106,4 +106,77 @@ a {
 
 .menu__item:hover {
     color: white;
+}
+
+
+.content_container {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.content_box {
+    width: 80vw;
+    height: 150px;
+    background-color: blue;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    transition: all 0.7s linear;
+    transform: translateY(100vh);
+    box-shadow: 0px 6px 3px gray;
+    opacity: 0;
+    cursor: pointer;
+}
+
+#content_box1 {
+    background-color: orange;
+
+}
+
+#content_box2 {
+    background-color: skyblue;
+    transition-delay: 0.1s;
+}
+
+#content_box3 {
+    background-color: black;
+    transition-delay: 0.2s;
+}
+
+.content_box_ani {
+    opacity: 1;
+    transform: translateY(0vh);
+}
+
+.content_title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 30px;
+}
+
+#title3 {
+    font-size: 50px;
+    font-weight: 800;
+    width: 200px;
+    height: 100px;
+    font-family: "Circular";
+    margin-top: 90px !important;
+    margin-bottom: 50px;
+    letter-spacing: 1px;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.horizontal_rule {
+    border-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-width: 1.5px;
+    margin-top: 40px;
 }
