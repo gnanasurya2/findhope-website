@@ -132,17 +132,17 @@ a {
 }
 
 #content_box1 {
-    background-color: orange;
+    background: linear-gradient(to right bottom, #FED070, #EC6F8E);
 
 }
 
 #content_box2 {
-    background-color: skyblue;
+    background: linear-gradient(to right, #E76AB0, #A73FAE);
     transition-delay: 0.1s;
 }
 
 #content_box3 {
-    background-color: black;
+    background: linear-gradient(to right top, #97E7E2, #5A8AC3);
     transition-delay: 0.2s;
 }
 
@@ -179,4 +179,24 @@ a {
     margin-right: 20px;
     border-width: 1.5px;
     margin-top: 40px;
+}
+
+.content_button {
+    margin-top: 60px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 26px;
+    padding: 10px;
+    background-color: #ED6A90;
+    color: white;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#button_2 {
+    background-color: #A639AD;
+}
+
+#button_3 {
+    background-color: #527BBD;
 }
