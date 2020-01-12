@@ -1,0 +1,160 @@
+@font-face {
+    font-family: "Circular";
+    src: url("./Circular\ Std\ Book.otf");
+    src: local("Circular"), local("Circular"),
+        url("./Circular\ Std\ Book.otf") format("opentype");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Circular';
+}
+
+.navbar {
+    position: fixed;
+    top: 0%;
+    height: 10vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 999;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+    z-index: 9999 !important;
+}
+
+.bg {
+    position: absolute;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    transition: all 1s cubic-bezier(0.5, 0, 0.2, 1);
+}
+
+.menu__btn {
+    z-index: 99999;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu__container {
+    z-index: 105;
+    list-style: none;
+    line-height: 2em;
+    text-align: right;
+    margin-right: 20px;
+}
+
+.menu_bg_layer {
+    width: 200vw;
+    height: 250vw;
+    border-radius: 50%;
+    position: absolute;
+    top: -250vw;
+    right: -100vw;
+    overflow: hidden;
+    transition: all 0.7s cubic-bezier(0.5, 0, 0.2, 1);
+    z-index: 100;
+}
+
+.bg_layer2 {
+    background-color: #eb4034;
+}
+
+.bg_layer3 {
+    background-color: #eb4034;
+    opacity: 0.5;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu__list {
+    list-style: none;
+}
+
+.btn {
+    padding-left: 120px;
+}
+
+.menu__container {
+    position: absolute;
+    margin-top: 60px;
+    visibility: hidden;
+    transition-delay: 0.3s;
+    right: 0;
+}
+
+.menu__title {
+    font-size: 25px;
+    margin-top: 1000px;
+    color: black;
+}
+
+.menu__list {
+    line-height: 45px;
+    font-size: 25px;
+}
+
+.menu__item:hover {
+    color: white;
+}
+
+.video_content {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.video {
+    width: 90vw;
+    height: 30vh;
+    border: none;
+    border-radius: 7px;
+}
+
+.content {
+    width: 90vw;
+    height: 50vh;
+    overflow-x: scroll;
+    margin-top: 5vh;
+    border-radius: 7px;
+    margin-bottom: 5vh;
+}
+
+.slide {
+    float: left;
+    width: 90vw;
+    height: 50vh;
+}
+
+.holder {
+    width: 400%;
+}
+
+#slide1 {
+    background-color: black;
+}
+
+#slide2 {
+    background-color: blue;
+}
+
+#slide3 {
+    background-color: red;
+}
+
+#slide4 {
+    background-color: green;
+}
