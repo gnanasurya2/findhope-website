@@ -126,7 +126,7 @@ a {
 
 .content {
     width: 90vw;
-    height: 50vh;
+    height: 90vw;
     overflow-x: scroll;
     margin-top: 5vh;
     border-radius: 7px;
@@ -136,7 +136,7 @@ a {
 .slide {
     float: left;
     width: 90vw;
-    height: 50vh;
+    height: 90vw;
 }
 
 .holder {
@@ -144,17 +144,25 @@ a {
 }
 
 #slide1 {
-    background-color: black;
+    background-image: url('./1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #slide2 {
-    background-color: blue;
+    background-image: url('./4.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #slide3 {
-    background-color: red;
+    background-image: url('./2.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #slide4 {
-    background-color: green;
+    background-image: url('./3.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
