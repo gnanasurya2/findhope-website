@@ -752,6 +752,9 @@
     opacity: 0;
     transition: all 0.5s linear;
     transition-delay: 1.2s;
+  }
+
+  #box2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -834,7 +837,7 @@
   }
 
   #sec1 {
-    height: 170vh;
+    height: 140vh;
     z-index: 0;
   }
 
