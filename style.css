@@ -847,8 +847,9 @@
   }
 
   .image {
-    height: 60vh;
+    height: 40vh;
     z-index: 30;
+    margin-top: 40px;
     margin-bottom: 40px;
   }
 
