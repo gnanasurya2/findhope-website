@@ -503,9 +503,7 @@
     transition: all 4s linear;
   }
 
-  button:hover {
-    background-color: azure;
-  }
+
 
   #sec9 {
     height: 100vh;
@@ -987,9 +985,6 @@
     transition: all 4s linear;
   }
 
-  button:hover {
-    background-color: azure;
-  }
 
   #sec9 {
     height: 100vh;
