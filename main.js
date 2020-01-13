@@ -196,25 +196,29 @@ $(document).ready(function () {
     })
     .addTo(controller);
   var scene17 = new ScrollMagic.Scene({
-      triggerElement: "#sec2"
+      triggerElement: "#sec2",
+      reverse: false
     })
     .setClassToggle("#box3", "boxani")
     .addTo(controller);
   var scene18 = new ScrollMagic.Scene({
       triggerElement: "#but1",
-      offset: 50
+      offset: 50,
+      reverse: false
     })
     .setClassToggle("#img2", "img_ani")
     .addTo(controller);
   var scene19 = new ScrollMagic.Scene({
       triggerElement: "#but1",
-      offset: 50
+      offset: 50,
+      reverse: false
     })
     .setClassToggle("#img3", "img_ani")
     .addTo(controller);
   var scene20 = new ScrollMagic.Scene({
       triggerElement: "#but1",
-      offset: 50
+      offset: 50,
+      reverse: false
     })
     .setClassToggle("#img1", "img_ani")
     .addTo(controller);
