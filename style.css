@@ -752,6 +752,9 @@
     opacity: 0;
     transition: all 0.5s linear;
     transition-delay: 1.2s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .boxani {
@@ -844,8 +847,9 @@
   }
 
   .image {
-    width: 90vw;
+    height: 60vh;
     z-index: 30;
+    margin-bottom: 40px;
   }
 
   #title3 {
