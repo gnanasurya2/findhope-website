@@ -11,6 +11,10 @@
     font-family: 'Circular';
 }
 
+.text {
+    margin-left: 30px;
+}
+
 .navbar {
     position: fixed;
     top: 0%;
@@ -109,10 +113,6 @@ a {
 }
 
 @media screen and (min-width:601px) {
-    .text {
-        font-size: 40px;
-        margin-left: 10vw;
-    }
 
     .content_container {
         display: flex;
@@ -209,6 +209,11 @@ a {
 }
 
 @media screen and (max-width:600px) {
+    .text {
+        font-size: 40px;
+        margin-left: 10vw;
+    }
+
     .content_container {
         display: flex;
         flex: 1;
