@@ -101,6 +101,7 @@ a {
     font-size: 25px;
     margin-top: 1000px;
     color: black;
+    display: none;
 }
 
 .menu__list {
@@ -210,7 +211,7 @@ a {
 
 @media screen and (max-width:600px) {
     .text {
-        font-size: 40px;
+
         margin-left: 10vw;
     }
 

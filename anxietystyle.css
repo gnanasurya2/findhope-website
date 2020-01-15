@@ -101,6 +101,7 @@ a {
     font-size: 25px;
     margin-top: 1000px;
     color: black;
+    display: none;
 }
 
 .menu__list {
@@ -116,6 +117,11 @@ a {
     .text {
         font-size: 40px;
         margin-left: 10vw;
+    }
+
+    .menu__list {
+        line-height: 60px;
+        font-size: 45px;
     }
 
     .video_content {

@@ -65,11 +65,11 @@
 }
 
 .bg_layer2 {
-    background-color: #eb4034;
+    background-color: #16DB93;
 }
 
 .bg_layer3 {
-    background-color: #eb4034;
+    background-color: #16DB93;
     opacity: 0.5;
 }
 
@@ -78,6 +78,9 @@ a {
     color: black;
     display: flex;
     flex-direction: column;
+}
+
+.link {
     align-items: center;
 }
 
@@ -101,6 +104,7 @@ a {
     font-size: 25px;
     margin-top: 1000px;
     color: black;
+    display: none;
 }
 
 .menu__list {
@@ -152,9 +156,10 @@ a {
 
     .text1_1 {
         position: absolute;
-        font-size: 15px;
+        font-size: 20px;
         top: 220px;
         margin-left: 30px;
+        margin-bottom: 20px;
         transition: all .5s linear .3s;
         transform: translateY(100px);
         opacity: 0;
@@ -162,7 +167,7 @@ a {
 
     .btn1 {
         position: absolute;
-        margin-top: 295px;
+        margin-top: 315px;
         margin-left: 30px;
         border: none;
         border-radius: 6px;
@@ -187,7 +192,7 @@ a {
     }
 
     .text2 {
-        padding-top: 40px;
+        padding-top: 30px;
         padding-right: 10px;
         font-size: 30px;
         margin-left: 30px;
@@ -358,7 +363,7 @@ a {
         height: 60px;
         border: none;
         font-size: 20px;
-        margin-top: 30px;
+        /* margin-top: 30px; */
         cursor: pointer;
         transition: all .5s linear .9s;
         transform: translateY(100px);

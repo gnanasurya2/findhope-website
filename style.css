@@ -20,6 +20,83 @@
 
 @import url(https://fonts.googleapis.com/css?family=Space+Mono:400, 700);
 
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 999999;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.loader_div {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 999998;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0px;
+    opacity: 1
+  }
+}
+
+@keyframes animatebottom {
+  from {
+    bottom: -100px;
+    opacity: 0
+  }
+
+  to {
+    bottom: 0;
+    opacity: 1
+  }
+}
+
 .bg {
   position: absolute;
   overflow: hidden;
@@ -88,6 +165,7 @@ a {
   font-size: 75px;
   margin-top: 1000px;
   color: black;
+  display: none;
 }
 
 .menu__list {
@@ -227,7 +305,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     margin: 10px;
-    z-index: 9999 !important;
+    display: none;
   }
 
   /*# sourceMappingURL=output.css.map */
@@ -643,6 +721,7 @@ a {
     justify-content: space-between;
     margin: 10px;
     z-index: 9999 !important;
+    display: none;
   }
 
   /*# sourceMappingURL=output.css.map */
@@ -714,6 +793,7 @@ a {
     font-size: 25px;
     margin-top: 1000px;
     color: black;
+    display: none;
   }
 
   .menu__list {

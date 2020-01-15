@@ -101,6 +101,7 @@ a {
     font-size: 25px;
     margin-top: 1000px;
     color: black;
+    display: none;
 }
 
 .menu__list {

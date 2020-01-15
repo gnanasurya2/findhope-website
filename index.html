@@ -10,9 +10,12 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 
-<body>
+<body onload="myFunction()">
+  <div class="loader_div" id="loader_div">
+    <div id="loader"></div>
+  </div>
   <div class="navbar" id="t1">
-    <div class="heading">
+    <div class="heading" id="heading">
       <a href="./index.html">
         <div>
           <h1 class="text">FindHope.</h1>
@@ -29,14 +32,19 @@
           <a href="./index.html">Home</a>
         </li>
         <li class="menu__item">
-          <a href="./youthadvocates.html">Youth Advocates</a>
+          <a href="./get_help.html">Get Help</a>
         </li>
         <li class="menu__item">
           <a href="./stories.html">Stories</a>
         </li>
         <li class="menu__item">
+          <a href="./youthadvocates.html">Youth Advocates</a>
+        </li>
+
+        <li class="menu__item">
           <a href="./aboutus.html">About Us</a>
         </li>
+
       </ul>
     </div>
     <div class="bg_layer3 menu_bg_layer" id="menu1"></div>
@@ -57,7 +65,7 @@
       </svg>
     </div>
     <p id="title"></p>
-    <div class="box" id="box">
+    <div class="box" id="box" style="transition-delay: 4.7s;">
       <p class="text2">
         We create digital products that change the way people look at, deal
         with and take control of their mental wellbeing.

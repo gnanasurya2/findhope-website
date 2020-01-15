@@ -97,6 +97,7 @@ a {
     font-size: 25px;
     margin-top: 1000px;
     color: black;
+    display: none;
 }
 
 .menu__list {
@@ -111,7 +112,6 @@ a {
 @media screen and (min-width:600px) {
     .text {
         font-size: 40px;
-        margin-left: 10vw;
     }
 
     .content {
@@ -139,6 +139,10 @@ a {
         padding-top: 30px;
         border-radius: 7px;
         margin-bottom: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 }
 

@@ -104,13 +104,6 @@ function typeWriter3() {
 }
 $(document).ready(function () {
   var controller = new ScrollMagic.Controller();
-  var scene = new ScrollMagic.Scene({
-      triggerElement: "#t1"
-    })
-    .on("start", function () {
-      typeWriter();
-    })
-    .addTo(controller);
   var scene1 = new ScrollMagic.Scene({
       triggerElement: "#t1"
     })
@@ -251,4 +244,15 @@ function onclik() {
       document.getElementById("menu").style.visibility = "hidden";
     }, 200);
   }
+}
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("loader_div").style.display = "none";
+  document.getElementById('heading').style.display = "flex";
+  typeWriter();
 }
